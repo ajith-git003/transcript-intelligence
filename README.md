@@ -15,21 +15,23 @@ Transforms 100 raw enterprise call transcripts into actionable intelligence for 
 
 ## Architecture
 
+```
 Raw JSON Transcripts (100 folders)
-↓
-Ingestion Agent          ← Rule-based call type inference, no LLM
-↓
-Topic Discovery Agent    ← GPT-4o-mini, constrained to 12 categories
-↓
-Sentiment Agent          ← Hybrid: math for score/arc, LLM for frustration
-↓
-Churn Risk Agent         ← Hybrid: keyword scan + LLM for citations
-↓
-Synthesis Agent          ← GPT-4o-mini, combines all outputs
-↓
-SQLite + FastAPI          ← REST API serving the frontend
-↓
-Next.js Dashboard        ← 5-page SaaS UI
+        ↓
+Ingestion Agent       ← Rule-based call type inference, no LLM
+        ↓
+Topic Discovery Agent ← GPT-4o-mini, constrained to 12 categories
+        ↓
+Sentiment Agent       ← Hybrid: math for score/arc, LLM for frustration
+        ↓
+Churn Risk Agent      ← Hybrid: keyword scan + LLM for citations
+        ↓
+Synthesis Agent       ← GPT-4o-mini, combines all outputs
+        ↓
+SQLite + FastAPI       ← REST API serving the frontend
+        ↓
+Next.js Dashboard     ← 5-page SaaS UI
+```
 
 ## Multi-Agent Design (LangGraph)
 
