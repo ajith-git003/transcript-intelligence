@@ -104,7 +104,7 @@ Open `http://localhost:3000`
 ## Key Engineering Decisions
 
 **Why hybrid agents instead of pure LLM?**
-Using LLM only where needed (frustration detection, risk narrative) and math/rules everywhere else keeps costs at ~$1.50 for 100 transcripts while maintaining explainability.
+Using LLM only where needed (frustration detection, risk narrative) and math/rules everywhere else keeps costs at ~$0.50 for 100 transcripts while maintaining explainability.
 
 **Why citations in risk analysis?**
 For a security company, "your AI flagged this customer as high risk" must be backed by specific evidence. Citations provide the exact transcript sentences that triggered a flag — auditable, verifiable, trustworthy.
