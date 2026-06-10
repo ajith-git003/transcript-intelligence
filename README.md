@@ -114,6 +114,7 @@ For a security company, "your AI flagged this customer as high risk" must be bac
 
 ## Project Structure
 
+```
 transcript-intelligence/
 ├── backend/
 │   ├── agents/
@@ -125,8 +126,11 @@ transcript-intelligence/
 │   ├── main.py               # FastAPI application
 │   ├── database.py           # SQLite repository layer
 │   ├── models.py             # Pydantic data contracts
+│   ├── retrieval.py          # ChromaDB vector store + RAG
 │   └── pipeline.py           # LangGraph orchestration
 ├── frontend/
 │   └── app/                  # Next.js pages
 ├── dataset/                  # 100 transcript folders
+├── BONUS_INSIGHTS.md
 └── README.md
+```
