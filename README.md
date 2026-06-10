@@ -1,6 +1,6 @@
 # Transcript Intelligence Platform
 
-An AI-powered enterprise call transcript analysis system built for AegisCloud's B2B SaaS operations.
+An AI-powered enterprise call transcript analysis system built for B2B SaaS operations.
 
 ## What It Does
 
