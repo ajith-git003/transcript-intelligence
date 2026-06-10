@@ -49,10 +49,10 @@ Each agent is a node in a directed graph. Data flows as `ProcessedTranscript` ob
 
 Every AI decision produces:
 - **Confidence score** (0.0–1.0) on topic classifications
-- **Citations** — exact transcript sentences as evidence for risk flags
-- **Audit logs** — every agent action logged with timestamp and outcome
-- **Human review flags** — 56/100 calls flagged with specific reasons
-- **Reasoning field** — LLM explains why it made each classification
+- **Citations** - exact transcript sentences as evidence for risk flags
+- **Audit logs** - every agent action logged with timestamp and outcome
+- **Human review flags** - 56/100 calls flagged with specific reasons
+- **Reasoning field** - LLM explains why it made each classification
 
 ## Tech Stack
 
@@ -109,7 +109,7 @@ Open `http://localhost:3000`
 Using LLM only where needed (frustration detection, risk narrative) and math/rules everywhere else keeps costs at ~$0.50 for 100 transcripts while maintaining explainability.
 
 **Why citations in risk analysis?**
-For a security company, "your AI flagged this customer as high risk" must be backed by specific evidence. Citations provide the exact transcript sentences that triggered a flag — auditable, verifiable, trustworthy.
+For a security company, "your AI flagged this customer as high risk" must be backed by specific evidence. Citations provide the exact transcript sentences that triggered a flag, auditable, verifiable, trustworthy.
 
 **Why SQLite?**
 100 transcripts doesn't need a Postgres container. The repository pattern in `database.py` means swapping to Postgres is a 5-line change when scale requires it.
