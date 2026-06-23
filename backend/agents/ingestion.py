@@ -12,7 +12,7 @@
 #
 # WHY THIS IS ITS OWN AGENT:
 #   Separation of concerns. If the raw data format changes
-#   (e.g. Rubrik adds a new field), only THIS file changes.
+#   (e.g. a new field is added), only THIS file changes.
 #   Nothing else in the pipeline needs to know about raw JSON.
 #
 # CALLED BY: pipeline.py (LangGraph orchestration)
@@ -45,7 +45,7 @@ def infer_call_type(title: str, all_emails: list[str]) -> CallType:
     
     LOGIC:
     1. Title contains "Support Case" → SUPPORT
-       (Rubrik's support team uses this naming convention)
+       (AegisCloud's support team uses this naming convention)
     
     2. All emails share the same domain → INTERNAL
        (only company employees = internal meeting)
