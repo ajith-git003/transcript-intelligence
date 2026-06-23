@@ -352,7 +352,7 @@ def log_agent_action(meeting_id: str, agent_name: str,
     
     This is our governance audit trail — every AI decision is logged
     with timestamp, agent name, and outcome.
-    Rubrik as a security company will love this.
+    Enterprise security companies will love this.
     """
     conn = get_connection()
     cursor = conn.cursor()
