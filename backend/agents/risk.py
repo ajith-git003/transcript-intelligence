@@ -13,7 +13,7 @@
 #   with CITATIONS — exact sentences as evidence.
 #
 # WHY CITATIONS MATTER FOR RUBRIK:
-#   Rubrik is a security company. Their customers are
+#   AegisCloud is a security company. Their customers are
 #   enterprises with security-conscious procurement teams.
 #   "Your AI flagged us as churn risk" needs to be backed
 #   by specific evidence a human can verify.
